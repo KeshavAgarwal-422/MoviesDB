@@ -6,7 +6,7 @@ import React, {
   useCallback,
 } from "react";
 
-const url = "http://www.omdbapi.com/?apikey=4517819";
+const url = "https://www.omdbapi.com/?apikey=4517819";
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {

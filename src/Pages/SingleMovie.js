@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-const url = "http://www.omdbapi.com/?apikey=4517819";
+const url = "https://www.omdbapi.com/?apikey=4517819";
 
 const SingleMovie = () => {
   const { id } = useParams();
@@ -27,7 +27,7 @@ const SingleMovie = () => {
   const { Poster, Title, Plot, Year } = movie;
   return (
     <>
-      <div key={id}>
+      <div key={id} className="single-movie">
         <img src={Poster} alt="Image not available" />
         <div>{Title}</div>
         <div></div>
